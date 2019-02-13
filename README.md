@@ -6,8 +6,8 @@ v1
 
 v2
 * Combobox
-** Departamento 
-** Ciudad
+** Departamento
+** Ciudadok 
 * Agregar fecha factura   datepicker
 
 * Ocultar Zona
@@ -19,6 +19,6 @@ v2
 * cantidad spiner
 * Agregar total : Formato moneda y label
 * Agregar bloque totales : label
-
+* separar js
 
 
