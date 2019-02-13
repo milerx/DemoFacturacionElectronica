@@ -1,0 +1,79 @@
+{
+  "adquiriente": {
+    "tipo":{
+      "codigo":"2"
+    },
+    "parte":{
+      "identificacion":{
+        "tipo":{
+          "codigo":"22"
+        },
+        "valor": "8355990"
+      },
+      "direccionFisica":{
+        "Linea": "Carrera 8 Nº 6C - 101",
+                "Zona": "Centro",
+                "Ciudad": "Guamo",
+                "Departamento": "Tolima",
+                "pais":{
+          "codigo":"CO"
+        }
+      },
+      "regimenFiscal":{
+        "tipo":"0"
+      },
+            "Nombres": "Eduardo",
+            "Apellidos": "Márquez",
+            "Contacto":{
+                "CorreoElectronico": "eduardo.marquez@dominio.com",
+                "NumeroTelefonico": "+57 0000000000"
+            }
+    }
+  },
+  "linea": [
+        {
+                  "Cantidad": 234,
+                  "Descripcion": "producto/servicio",
+                  "Moneda": {
+                    "Codigo":"COP"
+                  },
+                  "PrecioUnitario": 43256,
+                  "CostoTotal": 10121904
+              }
+        ],
+    "Impuesto":[
+            {
+                  "Tipo": {
+                    "Codigo":"01"
+                  },
+                  "Porcentaje": 16,
+                  "Moneda": {
+                    "Codigo":"COP"
+                  },
+                  "BaseImponible": 10121904,
+                  "Importe": 1619504.64,
+                  "Retenido": false
+              },
+              {
+                  "Tipo": {
+                    "Codigo":"03"
+                  },
+                  "Porcentaje": 4.14,
+                  "Moneda": {
+                    "Codigo":"COP"
+                  },
+                  "BaseImponible": 10121904,
+                  "Importe": 419046.82,
+                  "Retenido": false
+              }
+      ],
+      "importes":{
+            "Moneda":{
+              "Codigo":"COP"
+            },
+            "ImporteBruto":10121904,
+            "Impuestos":2038551.46,
+            "Total":12160455.46
+        }
+            
+}
