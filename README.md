@@ -6,9 +6,9 @@ v1
 
 v2
 * Combobox
-    Tipo de Documento
-    ~~Departamento~~
-    ~~Ciudad~~
+    - Tipo de Documento
+    - ~~Departamento~~
+    - ~~Ciudad~~
 * Documento (reducir el tamaño)
 * Agregar fecha factura   datepicker
 * ~~Ocultar Zona~~
