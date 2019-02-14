@@ -51,6 +51,7 @@
             if ( event.which == 9 ) {
                event.preventDefault();
               ltotal1.innerHTML = '$'+prec_1.value * cant_1.value;
+              $('#impu-1').focus();
            
             }
          
@@ -73,8 +74,8 @@
 
 
                total = subtotal + impuesto;
-
-              alert('total '+ total);
+               $('#aceptar').focus();
+            
            
             }
          
