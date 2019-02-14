@@ -25,5 +25,7 @@ v2
 * ~~encerrar el div del contenido~~
 * ~~colocar cabecera~~
 * ~~colocar color de fondo gris~~
-* separar js
-* validar que la nueva tabla funcione
+* ~~separar js~~
+* ~~validar que la nueva tabla funcione~~
+* cambiar tipos de input en la tabla
+* agregar inputs adicionales
