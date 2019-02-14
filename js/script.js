@@ -1,12 +1,17 @@
-<script>
+//Declaro las variables
         const click = document.getElementById('aceptar');
         const tipoC = document.getElementById('tipo-cliente');
         const tipoD = document.getElementById('tipo-Documento');
         const nombre_p = document.getElementById('nombre');
         const apellido = document.getElementById('apellido');
         const documento = document.getElementById('documento');
-        const departamento = document.getElementById('departamento');
-        const ciudad = document.getElementById('ciudad');
+        const departamento = "Atlantico";//document.getElementById('departamento');
+        const selector = document.getElementById('ciudad');
+
+
+        
+    var ciudad = selector[selector.selectedIndex].value;
+
      
         const zona = document.getElementById('zona');
         const direccion = document.getElementById('direccion');
@@ -33,14 +38,14 @@
     
        
        $("#aceptar").on("click", getUsers);
-function getUsers() {
-  $.ajax({
-    url: 'http://35.190.138.22/FacturacionElectronica/procesarFactura',
-	method: "POST",
-	data: 
-{
-	"adquiriente": {
-		"tipo":{
+            function getUsers() {
+             $.ajax({
+            url: 'http://35.190.138.22/FacturacionElectronica/procesarFactura',
+	        method: "POST",
+	        data: 
+        {
+	        "adquiriente": {
+		    "tipo":{
 			"codigo":"2"
 		},
 		"parte":{
@@ -125,4 +130,5 @@ function getUsers() {
     error: function() {
        alert('Error al enviar la factura');
     }
-  });
+  
+})}
