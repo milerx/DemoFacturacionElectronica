@@ -7,7 +7,10 @@
         const documento = document.getElementById('documento');
         const departamento = "Atlantico";//document.getElementById('departamento');
         const selector = document.getElementById('ciudad');
-
+        const lsubttl  = document.getElementById('subttl');
+        const lttlimp = document.getElementById('ttlimp');
+        const lttl = document.getElementById('ttl');
+     
 
         
     var ciudad = selector[selector.selectedIndex].value;
@@ -21,6 +24,8 @@
         const desc_1 = document.getElementById('desc-1');
         const cant_1 = document.getElementById('cant-1');
         const prec_1 = document.getElementById('prec-1');
+        const ltotal1 = document.getElementById('total1');
+        const impu_1 = document.getElementById('impu-1');
         const moneda_det = "COP";
         const desc_2 = document.getElementById('desc-2');
         const cant_2 = document.getElementById('cant-2');
@@ -35,6 +40,45 @@
         const cant_5 = document.getElementById('cant-5');
         const prec_5 = document.getElementById('prec-5');
         const pais = "CO";
+
+        let subtotal = 0;
+        let total = 0;
+        let impuesto = 0;
+
+        $( "#cant-1" ).keydown(function( event ) {
+
+           
+            if ( event.which == 9 ) {
+               event.preventDefault();
+              ltotal1.innerHTML = '$'+prec_1.value * cant_1.value;
+           
+            }
+         
+          });
+
+          $( "#impu-1" ).keydown(function( event ) {
+
+           
+            if ( event.which == 9 ) {
+               event.preventDefault();
+               subtotal = prec_1.value * cant_1.value;
+               lsubttl.innerHTML = subtotal;
+
+               impuesto = subtotal * (impu_1.value/100);
+
+
+               
+               lttlimp.innerHTML = '$ '+impuesto;
+               lttl.innerHTML = subtotal + impuesto;
+
+
+               total = subtotal + impuesto;
+
+              alert('total '+ total);
+           
+            }
+         
+          });
     
        
        $("#aceptar").on("click", getUsers);

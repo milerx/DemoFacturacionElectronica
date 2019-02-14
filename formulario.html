@@ -142,18 +142,19 @@
 						<tbody class="text-center">
 							<tr scope="row">
 								<td><input type="text" id="desc-1" placeholder="Descripción"></td>
-								<td><input type="number" class="text-right" id="cant-1" placeholder="0"></td>
+								
 								<td><input type="number" class="text-right" id="prec-1" placeholder="0"></td>
+								<td><input type="number" class="text-right" id="cant-1" placeholder="0"></td>
 								<td><input type="number" class="text-right" id="impu-1" placeholder="%"></td>
-								<td contenteditable="true">1125000</td>
+								<td > <label id="total1"></label></td>
 							</tr>
-							<tr scope="row">
+							<!--<tr scope="row">
 									<td><input type="text" id="desc-1" placeholder="Descripción"></td>
 									<td><input type="number" class="text-right" id="cant-1" placeholder="0"></td>
 									<td><input type="number" class="text-right" id="prec-1" placeholder="0"></td>
 									<td><input type="number" class="text-right" id="impu-1" placeholder="%"></td>
 								<td contenteditable="true">1125000</td>
-							</tr>
+							</tr>-->
 						</tbody>
 					</table>
 
@@ -165,7 +166,8 @@
 								<label for="subttl" class="form-control-plaintext text-right"><b>Subtotal:</b></label>
 							</div>
 							<div class="col-md-2">
-								<input type="text" readonly class="form-control-plaintext text-right" id="subttl" value="$174000">
+							
+								<label id="subttl">
 							</div>
 						</div>
 						<div class="form-row">
@@ -173,7 +175,7 @@
 								<label for="ttlimp" class="form-control-plaintext text-right"><b>Impuestos:</b></label>
 							</div>
 							<div class="col-md-2">
-								<input type="text" readonly class="form-control-plaintext text-right" id="ttlimp" value="$4566">
+									<label id="ttlimp">
 							</div>
 						</div>
 						<div class="form-row">
@@ -183,7 +185,8 @@
 								</label>
 							</div>
 							<div class="col-md-2">
-								<input type="text" readonly class="form-control-plaintext text-right" id="ttl" value="$178566">
+									<label id="ttl"></label>
+								
 							</div>
 						</div>
 					</div>
