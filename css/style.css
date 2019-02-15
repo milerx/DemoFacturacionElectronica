@@ -2,9 +2,18 @@
     padding: 0px;
     
 }
+.table-title{
+	text-align : center;
+}
+
+#ttl{
+	font-size : bold;
+}
+
 td input, td label{ 
     width: 100%;
   /*  padding: 10px;*/
+  padding-left : 5PX;
     margin: 0px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
