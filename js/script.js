@@ -51,7 +51,10 @@ $("#cant-1").keydown(function (event) {
   if (event.which == 9) {
     event.preventDefault();
     ltotal1.innerHTML = '$' + prec_1.value * cant_1.value;
+<<<<<<< HEAD
 	$("#impu-1").focus();
+=======
+>>>>>>> 87d858a36b11805fcc144650ec02f515f2103c26
 
   }
 
@@ -63,6 +66,7 @@ $("#impu-1").keydown(function (event) {
   if (event.which == 9) {
     event.preventDefault();
     subtotal = prec_1.value * cant_1.value;
+<<<<<<< HEAD
     lsubttl.innerHTML = '$ '+subtotal;
 
     impuesto = Math.round(subtotal * (impu_1.value / 100));
@@ -76,6 +80,19 @@ $("#impu-1").keydown(function (event) {
   
 	
 	$("#aceptar").focus();
+=======
+    lsubttl.innerHTML = subtotal;
+
+    impuesto = subtotal * (impu_1.value / 100);
+
+
+
+    lttlimp.innerHTML = '$ ' + impuesto;
+    lttl.innerHTML = subtotal + impuesto;
+
+
+    total = subtotal + impuesto;
+>>>>>>> 87d858a36b11805fcc144650ec02f515f2103c26
 
   }
 
@@ -163,7 +180,11 @@ function getUsers() {
           "Codigo": "COP"
         },
         "ImporteBruto": prec_1.value * cant_1.value,
+<<<<<<< HEAD
         "Impuestos": impuesto,
+=======
+        "Impuestos": 0,
+>>>>>>> 87d858a36b11805fcc144650ec02f515f2103c26
         "Total": prec_1.value * cant_1.value
       }
 
