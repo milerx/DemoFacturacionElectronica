@@ -45,7 +45,7 @@ let subtotal = 0;
 let total = 0;
 let impuesto = 0;
 
-$("#cant-1").keydown(function (event) {
+/*$("#cant-1").keydown(function (event) {
 
 
   if (event.which == 9) {
@@ -54,7 +54,7 @@ $("#cant-1").keydown(function (event) {
 
   }
 
-});
+});*/
 
 $("#impu-1").keydown(function (event) {
 
