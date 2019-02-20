@@ -62,17 +62,18 @@ $("#impu-1").keydown(function (event) {
   if (event.which == 9) {
     event.preventDefault();
     subtotal = prec_1.value * cant_1.value;
-    lsubttl.innerHTML = subtotal;
+    lsubttl.innerHTML = '$ '+subtotal;
 
-    impuesto = subtotal * (impu_1.value / 100);
+    impuesto = Math.round(subtotal * (impu_1.value / 100));
 
 
 
     lttlimp.innerHTML = '$ ' + impuesto;
-    lttl.innerHTML = subtotal + impuesto;
-
-
     total = subtotal + impuesto;
+    lttl.innerHTML = ' $ '+total;
+
+
+   
 
   }
 
