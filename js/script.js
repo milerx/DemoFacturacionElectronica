@@ -126,8 +126,8 @@ function getUsers() {
             "Codigo": "COP"
           },
           "PrecioUnitario": prec_1.value,
-          "CostoTotal": prec_1.value * cant_1.value,
-          "iva" : impu_1.value
+          "iva" : impu_1.value,
+          "CostoTotal": prec_1.value * cant_1.value
         }
       ],
       "Impuesto": [
